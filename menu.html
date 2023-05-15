@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mod_5_sol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  label.logo span{
+    color: #b50d05;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li e{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  e.active,e:hover{
+    background: grey;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li e{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: grey;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li e{
+      font-size: 20px;
+    }
+    e:hover,e.active{
+      background: none;
+      color: #b50d05;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+        body {
+    text-align: center;
+}
+#container{
+    display: flex;
+}
+
+.parent-div {
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    border: 4px solid black;
+    padding: 25px 5px 5px 5px ;
+    font-weight: bold;
+    background-color: grey;
+    position: relative;
+}
+.parent-div span{
+  font-size: 25px;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MENU</label>
+      <ul>
+        <li><e class="active" href="#">LUNCH</e></li>
+        <li><e href="#">DINNER</e></li>
+        <li><e href="#">SUSHI</e></li>
+        <li><e href="#">CHICKEN</e></li>
+        <li><e href="#">BEEF</e></li>
+      </ul>
+    </nav>
+    <div id="container">
+        <div class="parent-div"><span>LUNCH</span><br><br>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+    </div><br><br>
+        <div class="parent-div"><span>DINNER</span><br><br>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+        <br><br>
+        <div class="parent-div"><span>SUSHI</span><br><br>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+        <br><br>
+        <div class="parent-div"><span>CHICKEN</span><br><br>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+        <br><br>
+        <div class="parent-div"><span>BEEF</span><br><br>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+    </div>
+
+</html>
